@@ -16,42 +16,48 @@
 <div class="container">
     <header class="header">
 
-        <div class="upper-menu">
-            <div class="menu-left">
-                <button class="button upper-menu__button">
-                    <img src="images/menu.svg" alt="Меню">
-                </button>
+        <nav class="upper-menu">
 
-                <img class="divider-1 divider-1--hidden" src="images/divider.svg" alt="Разделитель">
-                
-                <div class="upper-menu__logo">
-                    <img class="logo" src="images/logo.svg" alt="Логотип">
-                </div>
-            </div>
+            <ul class="upper-menu__links-left">
+                <li class="link upper-menu__link">
+                    <a href="#">
+                        <img src="images/menu.svg" alt="Меню">
+                    </a>
+                </li>
+                <!-- <img class="divider-1 divider-1--hidden" src="images/divider.svg" alt="Разделитель"> -->          
+                <a href="#" class="link upper-menu__logo">
+                    <!-- <img class="logo" src="images/logo.svg" alt="Логотип"> -->
+                    <img src="images/logo.svg" alt="Логотип">
+                </a>
+            </ul>
+            <!-- <img class="divider-2 divider-2--hidden" src="images/divider.svg" alt="Разделитель"> -->
+            <ul class="upper-menu__links-right">
+                <li class="link upper-menu__link upper-menu__link--hidden">
+                    <a href="#">
+                        <img src="images/call.svg" alt="Звонок">
+                    </a>
+                </li>
+                <li class="link upper-menu__link upper-menu__link--hidden">
+                    <a href="#">
+                        <img src="images/chat.svg" alt="Чат">
+                    </a>
+                </li class="link upper-menu__link upper-menu__link--hidden">
 
-            <img class="divider-2 divider-2--hidden" src="images/divider.svg" alt="Разделитель">
-
-            <div class="menu-right">
-                <button class="button upper-menu__button upper-menu__button--hidden">
-                    <img src="images/call.svg" alt="Звонок">
-                </button>
-                <button class="button upper-menu__button upper-menu__button--hidden">
-                    <img src="images/chat.svg" alt="Чат">
-                </button>
-                <button class="button upper-menu__button upper-menu__button--hidden">
-                    <img src="images/profile.svg" alt="Профиль">
-                </button>
-
-                <img class="divider-3 divider-3--hidden" src="images/divider.svg" alt="Разделитель">
-
-                <button class="button upper-menu__button">
+                <li class="link upper-menu__link upper-menu__link--hidden">
+                    <a href="#">
+                        <img src="images/profile.svg" alt="Профиль">
+                    </a>
+                </li>
+                <!-- <img class="divider-3 divider-3--hidden" src="images/divider.svg" alt="Разделитель"> -->
+                <a href="#" class="link upper-menu__link">
                     <img src="images/repair.svg" alt="Оставить заявку">
-                </button>
-                <button class="button upper-menu__button">
+                </a>
+                <a href="#" class="link upper-menu__link">
                     <img src="images/checkstatus.svg" alt="Статус ремонта">
-                </button>
-            </div>
-        </div>
+                </a>
+            </ul>
+
+        </nav>
 
     </header>
 
@@ -59,45 +65,60 @@
 
         <div class="title">
             <h1 class="title__text">Услуги и сервисы</h1>
-            <div class="title-buttons title-buttons--hidden">
-                <label class="title__label">
-                    Оставить заявку
-                    <button class="button title__button">
-                        <img src="images/repair.svg" alt="Оставить заявку">
-                    </button>
-                </label>
-                <label class="title__label">
-                    Статус ремонта
-                    <button class="button title__button">
-                        <img src="images/checkstatus.svg" alt="Статус ремонта">
-                    </button>
-                </label>
-            </div>
+            <nav class="title-nav title-nav--hidden">
+                <ul class="title__links">
+                    <li class="link title__link">
+                        <a href="#">
+                            <span class="title__link-text">Оставить заявку</span>
+                            <img src="images/repair.svg" alt="Оставить заявку">
+                        </a>
+                    </li>
+                    <li class="link title__link">
+                        <a href="#">
+                            <span class="title__link-text">Статус ремонта</span>
+                            <img src="images/checkstatus.svg" alt="Статус ремонта">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </div>
 
         <nav class="slide-menu">
-            <button class="button slide-menu__button">Ремонтируемые бренды</button>
-            <button class="button slide-menu__button">Ремонтируемые устройства</button>
-            <button class="button slide-menu__button">Цены на услуги</button>
-            <button class="button slide-menu__button">Адреса сервисных центров</button>
-            <button class="button slide-menu__button">Специальные цены</button>
-            <button class="button slide-menu__button">Отзывы</button>
+            <ul class="slide-menu__links">
+                <li class="link slide-menu__link">
+                    <a href="#">Ремонтируемые бренды</a>
+                </li>
+                <li class="link slide-menu__link">
+                    <a href="#">Ремонтируемые устройства</a>
+                </li>
+                <li class="link slide-menu__link">
+                    <a href="#">Адреса сервисных центров</a>
+                </li>
+                <li class="link slide-menu__link">
+                    <a href="#">Цены на услуги</a>
+                </li>
+                <li class="link slide-menu__link">
+                    <a href="#">Специальные цены</a>
+                </li>
+                <li class="link slide-menu__link">
+                    <a href="#">Отзывы</a>
+                </li>
+            </ul>       
         </nav>
 
         <div class="content">
             <div class="content-text">
-                <div class="content-text-1"> <!--кривое название, это отдельный блок-->
-                    <p class="content-text-1__p-1">Мы являемся авторизованным сервисным центром по ремонту техники Dell.
+                <div class="content-description"> <!--кривое название, это отдельный блок-->
+                    <p class="content-description__paragraph-first">Мы являемся авторизованным сервисным центром по ремонту техники Dell.
                         Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
                     </p>
-                    <p class="content-text-1__p-2">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера,
+                    <p class="content-description__paragraph-second">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера,
                         что подтверждает большое количество постоянных клиентов.
                         Мы гордимся тем, что к нам обращаются по рекомендациям и,
                         в свою очередь, советуют нас родным и близким.</p>
                 </div>
                 <button class="button content__button">Читать далее</button>
             </div>
-
             <img class="content__picture" src="images/services.png" alt="Картинка">
         </div>
 

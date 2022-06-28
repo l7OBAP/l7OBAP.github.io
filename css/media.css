@@ -34,7 +34,7 @@
         margin: 0px 24px;
     }
 
-    .divider-1--hidden {
+    /* .divider-1--hidden {
         display: block;
     }
 
@@ -44,13 +44,13 @@
 
     .divider-3--hidden {
         display: block;
-    }
+    } */
 
-    .menu-right {
+    .upper-menu__links-right {
         min-width: 290px;
     }
 
-    .upper-menu__button--hidden {
+    .upper-menu__link--hidden {
         display: block;
     }
 
@@ -70,7 +70,7 @@
         margin: 24px 0 0 24px;
     }
 
-    .content-text-1 {
+    .content-description {
         max-height: 160px;
     }
 
@@ -92,12 +92,15 @@
         margin: 24px 32px;
     }
 
-    .title-buttons--hidden {
+    .title-nav--hidden {
         display: flex;
     }
 
     .slide-menu {
-        margin: 24px 32px;
+        margin: 24px 32px;     
+    }
+
+    .slide-menu__links {
         flex-wrap: wrap;
     }
 
@@ -105,7 +108,7 @@
         margin: 24px 0px 0px 32px;
     }
 
-    .content-text-1 {
+    .content-description {
         max-height: 160px;
     }
 

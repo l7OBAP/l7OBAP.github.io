@@ -11,13 +11,22 @@
 .header {
     font-family: "TTLakes";
     font-size: 16px;
+    color: #1B1C21;
     width: 100%;
 }
 
 .main {
     font-family: "TTLakes";
     font-size: 14px;
+    color: #1B1C21;
     width: 100%;
+}
+
+.link {
+    text-decoration: none;
+    background-color: transparent;
+    border: solid 1px transparent;
+    cursor: pointer;
 }
 
 .button {
@@ -41,14 +50,15 @@
     border-bottom: 1px solid #D9FFF5;
 }
 
-.menu-left {
+.upper-menu__links-left {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    list-style: none;
     min-width: 154px;
 }
 
-.divider-1--hidden {
+/* .divider-1--hidden {
     margin: 0 10px;
     display: none;
 }
@@ -60,28 +70,35 @@
 .divider-3--hidden {
     margin: 0 10px;
     display: none;
-}
+} */
 
-.menu-right {
+.upper-menu__links-right {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    list-style: none;
     min-width: 96px;
 }
 
-.upper-menu__button {
-    width: 42px;
-    height: 42px;
+.upper-menu__link {
+    width: 40px;
+    height: 40px;
 
     border-radius: 50%;
 }
 
-.upper-menu__button:hover,
-.upper-menu__button:focus {
+/* Такой селектор можно использовать? */
+.upper-menu__link a {
+    color: #1B1C21;
+    text-decoration: none;
+}
+
+.upper-menu__link:hover,
+.upper-menu__link:focus {
     border: 1px solid #B8FFEC;
 }
 
-.upper-menu__button--hidden {
+.upper-menu__link--hidden {
     display: none;
 }
 
@@ -90,10 +107,6 @@
     height: 52px;
 }
 
-.logo {
-    width: 100%;
-    height: 100%
-}
 
 /* .upper-menu__logo::after {
     content: "";
@@ -118,6 +131,8 @@
 .title__text {
     font-weight: bold;
     font-size: 28px;
+    height: 42px;
+    line-height: 42px;
 }
 
 .title__text::before {
@@ -130,7 +145,7 @@
     border-radius: 0 10px 10px 0;
 }
 
-.title-buttons {
+.title-nav {
     display: flex;
     align-items: center;
     align-self: flex-end;
@@ -138,39 +153,52 @@
     height: 42px;
 }
 
-.title-buttons--hidden {
+.title-nav--hidden {
     display: none;
 }
 
-.title__label {
+.title__links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.title__link {
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 32px;
+    /* width: 42px; */
+    height: 42px;
+    border-radius: 50%;
+}
+
+/* Такой селектор можно использовать? */
+.title__link a { 
     display: flex;
     align-items: center;
     font: inherit;
-    font-size: 16px;
     font-weight: 500;
-    height: 42px;
-    margin-left: 32px;
+    font-size: 16px;
+    color: #1B1C21;
+    text-decoration: none;
 }
 
-.title__button {
-    width: 42px;
-    height: 42px;
-    border-radius: 50%;
-    margin-left: 8px;
+.title__link-text {
+    font-weight: 500;
+    font-size: 16px;
+    color: #1B1C21;
+    margin: 0 8px 0 0;
 }
 
-.title__button:hover,
-.title__button:focus {
+/* .title__link:hover,
+.title__link:focus {
     border: 1px solid #B8FFEC;
-}
+} */
 
 /* Меню-слайдер */
 
 .slide-menu {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-
     overflow-y: hidden;
     overflow-x: auto;
 
@@ -181,25 +209,34 @@
     min-height: 40px;
 }
 
-.slide-menu__button {
+.slide-menu__links {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+}
+
+.slide-menu__link {
+    /* text-align: center;
+    width: fit-content; */
+    height: 40px;
+    line-height: 40px;
+    white-space: nowrap;
+    padding: 0 16px;
+    border-radius: 6px;
+}
+
+/* Такой селектор можно использовать? */
+.slide-menu__link a { 
     font: inherit;
     font-weight: 500;
     font-size: 16px;
     color: #7E7E82;
-
-    text-align: center;
-
-    width: fit-content;
-    height: 40px;
-    white-space: nowrap;
-
-    padding: 8px 16px;
-
-    border-radius: 6px;
+    text-decoration: none;
 }
 
-.slide-menu__button:hover,
-.slide-menu__button:focus {
+.slide-menu__link:hover,
+.slide-menu__link:focus {
     border: 1px solid #B8FFEC;
     border-radius: 6px;
 }
@@ -227,16 +264,16 @@
     overflow: hidden; */
 }
 
-.content-text-1 {
+.content-description {
     max-height: 72px;
     overflow: hidden;
 }
 
-.content-text-1__p-1 {
+.content-description__paragraph-first {
     margin: 0;
 }
 
-.content-text-1__p-2 {
+.content-description__paragraph-second {
     margin: 0;
     margin-top: 16px;
 }
