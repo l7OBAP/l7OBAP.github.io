@@ -13,14 +13,14 @@
 /* Скрытие полос прокрутки страницы для mobile и tablet */
 @media (min-width: 320px) and (max-width: 1120px) {
     /* Chrome/Safari/Webkit */
-    .body::-webkit-scrollbar {
+    body::-webkit-scrollbar {
         width: 0px;
         /* background: transparent; */
     }
 }
 
-/* Скрытие полос прокрутки горизонтального меню для tablet и desktop */
-@media (min-width: 768px) {
+/* Скрытие полос прокрутки горизонтального меню */
+@media (min-width: 320px) {
     /* Chrome/Safari/Webkit */
     .slide-menu::-webkit-scrollbar {
         width: 0px;
@@ -46,28 +46,41 @@
         display: block;
     } */
 
+    .upper-menu__links-left {
+        min-width: 180px;
+    }
+
     .upper-menu__links-right {
         min-width: 290px;
     }
 
     .upper-menu__link--hidden {
-        display: block;
+        display: flex;
+    }
+
+    .upper-menu__divider--hidden {
+        display: flex;
+    }
+
+    .upper-menu__divider-svg--hidden {
+        display: none;
     }
 
     .title {
-        margin: 24px 24px;
+        margin: 24px 24px 0 0;
     }
 
     .slide-menu {
-        margin: 24px 24px;
+        margin: 24px 24px 0 24px;
     }
 
     .content {
         flex-direction: row;
+        margin: 16px 0 0 0;
     }
 
     .content-text {
-        margin: 24px 0 0 24px;
+        margin: 0 0 0 24px;
     }
 
     .content-description {
@@ -76,7 +89,8 @@
 
     .content__picture {
         min-width: 360px;
-        margin: 24px 24px 0px 32px;
+        height: 208px;
+        margin: 0 24px 0 0;
         border-radius: 6px 0 0 6px;
     }
 
@@ -89,7 +103,7 @@
     }
 
     .title {
-        margin: 24px 32px;
+        margin: 24px 32px 0 0;
     }
 
     .title-nav--hidden {
@@ -97,15 +111,19 @@
     }
 
     .slide-menu {
-        margin: 24px 32px;     
+        margin: 24px 32px 0 24px;     
     }
 
     .slide-menu__links {
         flex-wrap: wrap;
     }
 
+    .content {
+        gap: 32px;
+    }
+
     .content-text {
-        margin: 24px 0px 0px 32px;
+        margin: 0 0 0 32px;
     }
 
     .content-description {
@@ -113,8 +131,9 @@
     }
 
     .content__picture {
-        min-width: 510px;
-        margin: 24px 32px 0px 32px;
+        min-width: 532px;
+        height: 307px;
+        margin: 0 32px 0 0;
         border-radius: 6px 0 0 6px;
     }
 
