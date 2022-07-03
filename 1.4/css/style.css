@@ -1,0 +1,274 @@
+/* Скрытие полос прокрутки страницы*/
+@media (min-width: 320px) {
+    /* Chrome/Safari/Webkit */
+    body::-webkit-scrollbar {
+        width: 0px;
+        /* background: transparent; */
+    }
+}
+
+.container {
+    margin: 0 auto 0 0;
+    width: 320px;
+    /* border-right: 1px solid black; */
+    box-shadow: 16px 0 52px rgba(14, 24, 80, 0.2);
+}
+
+.header {
+    font-family: "TTLakes";
+    font-size: 16px;
+    color: #1B1C21;
+    width: 100%;
+}
+
+.main {
+    font-family: "TTLakes";
+    font-size: 14px;
+    color: #1B1C21;
+    width: 100%;
+}
+
+.link {
+    box-sizing: border-box;
+    text-decoration: none;
+    background-color: transparent;
+    border: solid 2px transparent;
+    cursor: pointer;
+}
+
+.button {
+    background-color: transparent;
+    border: solid 1px transparent;
+    cursor: pointer;
+}
+
+/* Верхнее меню */
+.upper-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 24px;
+    width: auto;
+    height: 90px;
+}
+
+.upper-menu__links {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.upper-menu__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #FF3E79;
+}
+
+.upper-menu__link a {
+    color: #1B1C21;
+    text-decoration: none;
+}
+
+.upper-menu__link:hover,
+.upper-menu__link:focus {
+    border: 2px solid #B8FFEC;
+    transition: 0.2s linear;
+    filter: opacity(0.8);
+}
+
+.upper-menu__logo:hover,
+.upper-menu__logo:focus {
+    transition: 0.2s linear;
+    filter: opacity(0.8);
+}
+
+.upper-menu__link:last-child {
+    margin-left: auto;
+}
+
+.upper-menu__logo {
+    width: 102px;
+    height: 56px;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 24px 16px 0 0;
+    padding: 0 0 0 16px;
+    width: auto;
+    height: 32px;
+    border-left: 4px solid #41F6D7;
+}
+
+.title__text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7E7E82;
+    margin: 0;
+}
+
+/* Главное меню */
+.main-menu {
+    margin: 32px 0 0 24px;
+    max-width: 100%;
+}
+
+.main-menu__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 32px;
+    list-style: none;
+    width: 100%;
+    min-height: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+.main-menu__link {
+    height: 24px;
+    line-height: 24px;
+    padding: 0;
+}
+
+.main-menu__link a { 
+    font: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    color: #1B1C21;
+    text-decoration: none;
+}
+
+/* Контакты */
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 24px;
+    max-width: 100%;
+    margin: 256px 0 0 24px;
+    padding: 0;
+}
+
+.contact__links {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.contact__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #FF3E79;
+    margin: 0;
+    padding: 0;
+}
+
+.contact__link a {
+    color: #1B1C21;
+    text-decoration: none;
+}
+
+.contact__link:hover,
+.contact__link:focus {
+    border: 2px solid #B8FFEC;
+    transition: 0.2s linear;
+    filter: opacity(0.8);
+}
+
+/* Почта и телефон */
+.contact__mail-and-tel {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* .contact__mail {
+
+} */
+
+.contact__mail a {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1B1C21;
+    text-decoration: none;
+}
+
+/* .contact__tel {
+
+} */
+
+.contact__tel a {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    color: #1B1C21;
+    text-decoration: none;
+}
+
+/* Язык */
+.lang {
+    max-width: 100%;
+    height: 56px;
+    margin: 32px 0 0 24px;
+}
+
+.lang__items {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.lang__items {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.lang__item a {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1B1C21;
+    text-decoration: none;
+}
+
+.lang__item a:hover,
+.lang__item a:focus {
+    color: #7E7E82;
+}
